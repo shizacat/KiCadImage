@@ -6,6 +6,8 @@ ARG IBOM_VERSION=2.10.0
 
 ENV DEBIAN_FRONTEND=noninteractive
 
+USER root
+
 # Install python
 RUN apt-get update && apt-get install -y \
     python3 \
